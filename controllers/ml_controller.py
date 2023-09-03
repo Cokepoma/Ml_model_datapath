@@ -1,4 +1,6 @@
+# importamos libreria fastapi
 from fastapi import APIRouter, HTTPException, status
+# importamos las clases correspondientes del script models
 from models import Prediction_Input,Prediction_Output
 # Importamos las librerias necesarias
 import sys

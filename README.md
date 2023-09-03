@@ -52,3 +52,41 @@ docker build -t ml_datapath .
 ### Docker Run predicción
 
 ![Prediccion](imgs/prediccion_docker.png)
+
+## Segunda Fase Creación de Api
+
+Creación de la API con un patrón de diseño MVC(modelo - vista - controlador)
+
+### Creación de archivo app main
+
+inicializa la aplicación FastAPI y la monta en el servidor.
+![main](img/main.png)
+
+### Creación de modelo models.py
+
+Utiliza Pydantic para la validación de datos.
+![models](imgs/models.png)
+
+### Creación de routes.py
+
+Define las rutas
+![rutas](imgs/rutas.png)
+
+### Creación de controller.py
+
+Contiene la lógica de la aplicación
+![controller](controller.png)
+
+### Consulta de modelo de Ml en la API con postman
+
+Envio de los primeros datos para la predicción
+![primer_post](imgs/primer_post.png)
+Envio de los segundos datos para la predicción
+![segundo_post](imgs/segundo_post.png)
+
+
+### Obtención de prediciones en la API con postman
+
+Consulta de los datos en prediciones anteriores con Get
+![get](imgs/get.png)
+
